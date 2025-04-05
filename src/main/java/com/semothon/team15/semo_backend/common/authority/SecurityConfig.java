@@ -31,6 +31,10 @@ public class SecurityConfig {
                                 "/api/member/signup",
                                 "/api/member/check-login-id",
                                 "/api/member/verify-email",
+                                "/api/graduation/check",
+                                "/api/curriculum/recommend",
+                                "/api/curriculum/add-ques",
+                                "/api/timetable/get-timetable",
                                 "/error"
                         ).permitAll()
                         .requestMatchers("/api/member/**").hasAuthority("MEMBER")
